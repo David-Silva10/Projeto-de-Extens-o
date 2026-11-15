@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Changa+One:ital@0;1&family=Fredoka:wght@300..700&display=swap');
+
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: 
+    /* Mancha azul no canto superior esquerdo */
+    radial-gradient(at 15% 15%, #9ad1e6 0px, transparent 55%),
+    /* Mancha salmão/rosa no topo direito */
+    radial-gradient(at 85% 20%, #f5c3bc 0px, transparent 50%),
+    /* Mancha coral/laranja mais forte na parte inferior esquerda */
+    radial-gradient(at 20% 80%, #f0957d 0px, transparent 55%),
+    /* Mancha azul suave na parte inferior direita */
+    radial-gradient(at 85% 85%, #a8d8ea 0px, transparent 55%);
+    width: 100%;
+    padding: 20px 0px;
+}
+header img{
+    max-width:20vw ;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px;
+}
+.secoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 0;
+    padding-top: 0;
+    padding-bottom: 0%;
+    margin-top: 15px;
+    min-height: 60px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: 
+    /* Mancha azul no canto superior esquerdo */
+    radial-gradient(at 15% 15%, #9ad1e6 0px, transparent 55%),
+    /* Mancha salmão/rosa no topo direito */
+    radial-gradient(at 85% 20%, #f5c3bc 0px, transparent 50%),
+    /* Mancha coral/laranja mais forte na parte inferior esquerda */
+    radial-gradient(at 20% 80%, #f0957d 0px, transparent 55%),
+    /* Mancha azul suave na parte inferior direita */
+    radial-gradient(at 85% 85%, #a8d8ea 0px, transparent 55%);
+    /* background-color: #f0957d; */
+    border: 2px solid gainsboro;
+}
+div h5{
+    color: #f28668;
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 20px;
+    min-width: 100px;
+    height: 100%;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+}
+h1{
+    margin: 10px;
+    margin-bottom: 0;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    color: #de1c90;
+}
