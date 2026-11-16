@@ -68,3 +68,9 @@ h1{
     font-weight: 700;
     color: #de1c90;
 }
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
