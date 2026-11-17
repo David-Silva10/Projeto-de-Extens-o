@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Changa+One:ital@0;1&family=Fredoka:wght@300..700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header{
     display: flex;
     justify-content: center;
@@ -17,18 +23,20 @@ header{
     radial-gradient(at 85% 85%, #a8d8ea 0px, transparent 55%);
     width: 100%;
     padding: 20px 0px;
+    padding-bottom: 0%;
+    height: auto;
 }
 header img{
     max-width:20vw ;
     height: auto;
     border-radius: 20px;
-    margin: 10px;
+    margin: 7px;
 }
 .secoes{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0px 0;
+    padding: 0px;
     padding-top: 0;
     padding-bottom: 0%;
     margin-top: 15px;
@@ -47,15 +55,15 @@ header img{
     /* Mancha azul suave na parte inferior direita */
     radial-gradient(at 85% 85%, #a8d8ea 0px, transparent 55%);
     /* background-color: #f0957d; */
-    border: 2px solid gainsboro;
+    border: 5px solid gainsboro;
 }
 div h5{
     color: #f28668;
-    background-color: gainsboro;
+    background-color: rgb(230, 230, 230);
     border-radius: 10px;
     padding: 10px;
     font-size: 20px;
-    margin: 0 20px;
+    margin: 7px 20px;
     min-width: 100px;
     height: 100%;
     font-family: "Cabin", sans-serif;
@@ -74,8 +82,26 @@ main {
     align-items: center;
     text-align: center;
     flex-direction: column;
+    width: 100%;
+    background-color: #ffd4cf;
 }
 div {
     display: flex;
     flex-direction: column;
+}
+.Marrom {
+    color: #7c1b00;
+    margin-bottom: 0%;
+}
+.casquinha {
+    margin-top: 0%;
+}
+img{
+    width: 300px;
+}
+main * {
+    margin: 10px 5px;
+}
+main .container1 {
+    margin: 20px 0px; /* Apenas vertical (20px em cima e embaixo, 0 nas laterais) */
 }
