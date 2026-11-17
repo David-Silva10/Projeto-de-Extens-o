@@ -30,7 +30,7 @@ header img{
     max-width:20vw ;
     height: auto;
     border-radius: 20px;
-    margin: 7px;
+    margin: 2px;
 }
 .secoes{
     display: flex;
@@ -74,7 +74,7 @@ h1{
     margin-bottom: 0;
     font-family: "Fredoka", sans-serif;
     font-weight: 700;
-    color: #de1c90;
+    color: #d61545;
 }
 main {
     display: flex;
@@ -83,7 +83,15 @@ main {
     text-align: center;
     flex-direction: column;
     width: 100%;
-    background-color: #ffd4cf;
+    background-image: 
+    /* Mancha azul no canto superior esquerdo */
+    radial-gradient(at 15% 15%, #9ad1e6 0px, transparent 55%),
+    /* Mancha salmão/rosa no topo direito */
+    radial-gradient(at 85% 20%, #f5c3bc 0px, transparent 50%),
+    /* Mancha coral/laranja mais forte na parte inferior esquerda */
+    radial-gradient(at 20% 80%, #f0957d 0px, transparent 55%),
+    /* Mancha azul suave na parte inferior direita */
+    radial-gradient(at 85% 85%, #a8d8ea 0px, transparent 55%);
 }
 div {
     display: flex;
@@ -99,9 +107,19 @@ div {
 img{
     width: 300px;
 }
+.banner{
+    width: 100%;
+    margin-top: 0%;
+     box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.4);
+}
 main * {
     margin: 10px 5px;
 }
 main .container1 {
     margin: 20px 0px; /* Apenas vertical (20px em cima e embaixo, 0 nas laterais) */
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
