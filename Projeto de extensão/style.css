@@ -74,6 +74,7 @@ main {
     align-items: center;
     text-align: center;
     flex-direction: column;
+<<<<<<< HEAD
 }
 /* =========================================================
    CORREÇÃO DOS LINKS DO MENU E DA GRADE DE CARDS
@@ -166,4 +167,6 @@ main {
 
 .botao-card:hover {
     background-color: #b51465;
+=======
+>>>>>>> 15e6dc85ff57a0ab4ea610e346c06de7020d268a
 }
