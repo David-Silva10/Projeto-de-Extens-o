@@ -1,0 +1,58 @@
+{
+  "sorvetes": {
+    "titulo": "Sabores de Sorvetes",
+    "preco": "A partir de R$ 10,00",
+    "imagem": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=800",
+    "descricao": "Cremosos, refrescantes e produzidos diariamente com ingredientes selecionados. Escolha o tamanho e marque seus sabores favoritos:",
+    "labelOpcao2": "2. Selecione os Sabores:",
+    "opcoes": ["Pistache", "Morango", "Chocolate Belga", "Ninho Trufado", "Maracujá", "Flocos", "Doce de Leite", "Creme"]
+  },
+  "taca-chocolate": {
+    "titulo": "Taça Especial Chocolate",
+    "preco": "R$ 24,90",
+    "imagem": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800",
+    "descricao": "Três bolas artesanais, calda quente de chocolate meio amargo, chantilly fresco e tubetes crocantes.",
+    "labelOpcao2": "2. Escolha os Sabores das Bolas:",
+    "opcoes": ["Chocolate Belga", "Ninho Trufado", "Morango", "Creme", "Flocos"]
+  },
+  "casquinha-crocante": {
+    "titulo": "Casquinha Crocante",
+    "preco": "R$ 12,50",
+    "imagem": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=800",
+    "descricao": "Casquinha artesanal assada na hora com sorvete cremoso à sua escolha.",
+    "labelOpcao2": "2. Selecione o Sabor:",
+    "opcoes": ["Morango", "Chocolate Belga", "Pistache", "Doce de Leite", "Creme"]
+  },
+  "caldas": {
+    "titulo": "Caldas Especiais",
+    "preco": "A partir de R$ 4,00",
+    "imagem": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800",
+    "descricao": "Caldas artesanais quentes e frias para deixar seu pedido ainda mais irresistível.",
+    "labelOpcao2": "2. Sabores de Calda:",
+    "opcoes": ["Chocolate Meio Amargo", "Morango em Pedaços", "Caramelo Salgado", "Leite Condensado", "Nutella"]
+  },
+  "bebidas": {
+    "titulo": "Bebidas Geladas",
+    "preco": "A partir de R$ 14,00",
+    "imagem": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800",
+    "descricao": "Milk-shakes super cremosos e sodas italianas refrescantes.",
+    "labelOpcao2": "2. Escolha o Sabor:",
+    "opcoes": ["Milk-shake Ovomaltine", "Milk-shake Morango", "Milk-shake Pistache", "Soda Italiana Maçã Verde"]
+  },
+  "crepes": {
+    "titulo": "Opções de Crepes",
+    "preco": "A partir de R$ 18,00",
+    "imagem": "https://images.unsplash.com/photo-1519676867240-f03562e64548?w=800",
+    "descricao": "Massa leve e crocante preparada na hora com recheios generosos.",
+    "labelOpcao2": "2. Escolha o Recheio:",
+    "opcoes": ["Nutella com Morango", "Doce de Leite com Banana", "Chocolate Branco com Oreo", "Frango com Catupiry"]
+  },
+  "acompanhamentos": {
+    "titulo": "Acompanhamentos",
+    "preco": "A partir de R$ 3,00",
+    "imagem": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=800",
+    "descricao": "Toppings crocantes para combinar com seu sorvete ou taça.",
+    "labelOpcao2": "2. Selecione os Toppings:",
+    "opcoes": ["Castanha de Caju", "Granulado Belga", "Paçoca Triturada", "Confete", "Chantilly", "Tubetes Wafer"]
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes - Sorveteria Doce Vidal</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- MESMO CABEÇALHO PARA NAVEGAÇÃO ENTRE OS PRODUTOS -->
+  <header>
+    <a href="index.html" class="logo-link">
+      <div class="logo-box">
+        <span>SORVETERIA</span>
+        <h1>Doce Vidal</h1>
+      </div>
+    </a>
+
+    <nav class="menu-categorias">
+      <a href="produto.html?id=sorvetes" data-id="sorvetes" class="btn-menu">Sabores de Sorvetes</a>
+      <a href="produto.html?id=caldas" data-id="caldas" class="btn-menu">Caldas</a>
+      <a href="produto.html?id=bebidas" data-id="bebidas" class="btn-menu">Bebidas</a>
+      <a href="produto.html?id=crepes" data-id="crepes" class="btn-menu">Opções de Crepes</a>
+      <a href="produto.html?id=acompanhamentos" data-id="acompanhamentos" class="btn-menu">Acompanhamentos</a>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO DO PRODUTO -->
+  <main class="container-produto">
+    <div>
+      <img id="detalhe-img" src="" alt="Foto do Produto" class="foto-produto">
+    </div>
+
+    <div>
+      <h1 id="detalhe-titulo">Carregando...</h1>
+      <p id="detalhe-desc" class="descricao-produto"></p>
+
+      <div id="box-opcoes" class="lista-sabores"></div>
+
+      <div class="botoes-acao">
+        <a href="index.html" class="btn-voltar">← Voltar para todos os produtos</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id') || 'sorvetes';
+
+    // Destaca o botão ativo no cabeçalho
+    const btnAtivo = document.querySelector(`.btn-menu[data-id="${id}"]`);
+    if (btnAtivo) btnAtivo.classList.add('ativo');
+
+    let nomeProdutoAtual = "";
+
+    fetch('produtos.json')
+      .then(res => res.json())
+      .then(dados => {
+        const produto = dados[id];
+
+        if (!produto) {
+          document.getElementById('detalhe-titulo').innerText = "Produto não encontrado!";
+          return;
+        }
+
+        nomeProdutoAtual = produto.titulo;
+        document.title = `${produto.titulo} - Sorveteria Doce Vidal`;
+        document.getElementById('detalhe-img').src = produto.imagem;
+        document.getElementById('detalhe-titulo').innerText = produto.titulo;
+        document.getElementById('detalhe-desc').innerText = produto.descricao;
+        document.getElementById('detalhe-preco').innerText = produto.preco;
+
+        // Preenche tamanhos
+        document.getElementById('label-op1').innerText = produto.labelOpcao1;
+        const boxTamanhos = document.getElementById('box-tamanhos');
+        produto.tamanhos.forEach((tam, i) => {
+          boxTamanhos.innerHTML += `
+            <label>
+              <input type="radio" name="tamanho" value="${tam}" ${i === 0 ? 'checked' : ''}> ${tam}
+            </label>
+          `;
+        });
+
+        // Preenche sabores / opções
+        document.getElementById('label-op2').innerText = produto.labelOpcao2;
+        const boxOpcoes = document.getElementById('box-opcoes');
+        produto.opcoes.forEach(op => {
+          boxOpcoes.innerHTML += `
+            <label class="sabor-item">
+              <input type="checkbox" value="${op}"> ${op}
+            </label>
+          `;
+        });
+      });
+
+    function enviarPedido() {
+      const tamanho = document.querySelector('input[name="tamanho"]:checked').value;
+      const selecionados = Array.from(document.querySelectorAll('#box-opcoes input:checked')).map(el => el.value);
+
+      if (selecionados.length === 0) {
+        alert("Por favor, selecione pelo menos uma opção!");
+        return;
+      }
+
+      const numero = "5500000000000";
+      const texto = `Olá! Gostaria de pedir *${nomeProdutoAtual}*:\n*Tamanho:* ${tamanho}\n*Opções:* ${selecionados.join(", ")}`;
+      window.open(`https://wa.me/${numero}?text=${encodeURIComponent(texto)}`, "_blank");
+    }
+  </script>
+
+</body>
+</html>
