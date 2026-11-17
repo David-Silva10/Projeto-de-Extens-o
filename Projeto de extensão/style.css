@@ -75,3 +75,7 @@ main {
     text-align: center;
     flex-direction: column;
 }
+div {
+    display: flex;
+    flex-direction: column;
+}
