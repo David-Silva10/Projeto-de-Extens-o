@@ -119,10 +119,23 @@ main * {
 main .container1 {
     margin: 20px 0px; /* Apenas vertical (20px em cima e embaixo, 0 nas laterais) */
 }
-.container1{
+.container1 {
     display: flex;
+    flex-direction: row; /* Garante o alinhamento horizontal */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.container1 img {
+    display: inline-block;
+    width: 250px;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 .tituloCrepe{
     color: #ffffff;
