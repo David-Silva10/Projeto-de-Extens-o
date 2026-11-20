@@ -25,6 +25,7 @@ header{
     padding: 20px 0px;
     padding-bottom: 0%;
     height: auto;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.542);
 }
 header img{
     max-width:20vw ;
@@ -109,8 +110,8 @@ img{
 }
 .banner{
     width: 100%;
-    margin-top: 0%;
-     box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.4);
+    margin: 0%;
+    box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.4);
 }
 main * {
     margin: 10px 5px;
@@ -122,4 +123,15 @@ main .container1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.tituloCrepe{
+    color: #ffffff;
+    font-family: 'Cabin';
+    font-weight: 100;
+    font-size: 30px;
+    background-color: #81260d;
+    width: 100%;
+    margin-top: 2%;
+    padding: 14px;
+    box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.4);
 }
