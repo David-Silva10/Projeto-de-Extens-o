@@ -64,13 +64,13 @@ header img{
 .secoes h5 a,
 .secoes h5 a:visited {
     text-decoration: none;
-    color: #2d2d2d;
+    color: #d95d3f;
     transition: color 0.3s ease;
 }
 
 /* Muda a cor suavemente ao passar o mouse */
 .secoes h5 a:hover {
-    color: #d95d3f;
+    color: #4682B4;
 }
 
 div h5{
