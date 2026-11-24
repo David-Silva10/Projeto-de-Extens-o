@@ -64,13 +64,13 @@ header img{
 .secoes h5 a,
 .secoes h5 a:visited {
     text-decoration: none;
-    color: #2d2d2d;
+    color: #d95d3f;
     transition: color 0.3s ease;
 }
 
 /* Muda a cor suavemente ao passar o mouse */
 .secoes h5 a:hover {
-    color: #d95d3f;
+    color: #4682B4;
 }
 
 div h5{
@@ -123,6 +123,11 @@ div {
 }
 img{
     width: 250px;
+}
+.opcao-imagem {
+    width: auto;
+    height: auto;
+    border-radius: 8px;
 }
 .banner{
     width: 100%;
@@ -277,6 +282,61 @@ main .container1 {
     font-weight: bold;
     color: #333333;
     text-align: center;
+}
+
+.titulocaldas{
+    color: #ffffff;
+    font-family: 'Cabin';
+    font-weight: 100;
+    font-size: 30px;
+    background-color: #0a7bf5;
+    width: 100%;
+    margin-top: 2%;
+    padding: 14px;
+    text-align: center;
+    /* box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.4); */
+}
+
+.opcoes1 {
+    border-radius: 20px;
+    border: 3px solid #0a7bf5;
+    overflow: hidden;
+}
+.opcoes1 h2{
+    background-color:#0a7bf5;
+    color: #ffffff;
+    font-family: 'Cabin';
+    font-weight: 100;
+    font-size: 20px;
+    padding: 13px;
+    gap: 15px;
+    width: auto;
+    width: 100%;
+}
+.titulo-opcao {
+    background-color: #0a7bf5;
+    color: #fcfcfc;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    padding: 15px 40px;
+    width: fit-content;
+    text-align: center;
+    border-radius: 18px;
+    border: 3px solid #0a7bf5;
+    margin: 25px auto;
+}
+.tituloacompanhamentos{
+   color: #ffffff;
+    font-family: 'Cabin';
+    font-weight: 100;
+    font-size: 30px;
+    background-color: #0a7bf5;
+    width: 100%;
+    margin-top: 2%;
+    padding: 14px;
+    text-align: center;
+    /* box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.4); */
 }
 
 
