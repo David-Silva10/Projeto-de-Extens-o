@@ -143,10 +143,6 @@ main .container1 {
     flex-wrap: wrap;
     gap: 20px;
 }
-<<<<<<< HEAD
-=======
-.container1{
->>>>>>> pagina-principal
 .container1 {
     display: flex;
     flex-direction: row; /* Garante o alinhamento horizontal */
@@ -204,12 +200,6 @@ main .container1 {
     padding: 14px;
     /* box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.4); */
 }
-<<<<<<< HEAD
-=======
-    box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.4);
-}
-
->>>>>>> pagina-principal
 .grade-produtos {
     display: flex;
     flex-direction: row;
@@ -471,7 +461,6 @@ main .container1 {
   background-color: #e07a60;
   transform: translateY(-2px);
 }
-<<<<<<< HEAD
 
 .tituloSabores{
   font-family: "Cabin";
@@ -482,5 +471,3 @@ main .container1 {
   padding: 10px 30px;
   text-align: center;
 }
-=======
->>>>>>> pagina-principal
