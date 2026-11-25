@@ -290,7 +290,7 @@ main .container1 {
     font-family: 'Cabin';
     font-weight: 100;
     font-size: 30px;
-    background-color: #0a7bf5;
+    background-color: #713600;
     width: 100%;
     margin-top: 2%;
     padding: 14px;
@@ -300,11 +300,11 @@ main .container1 {
 
 .opcoes1 {
     border-radius: 20px;
-    border: 3px solid #0a7bf5;
+    border: 3px solid #713600;
     overflow: hidden;
 }
 .opcoes1 h2{
-    background-color:#0a7bf5;
+    background-color:#713600;
     color: #ffffff;
     font-family: 'Cabin';
     font-weight: 100;
@@ -315,7 +315,7 @@ main .container1 {
     width: 100%;
 }
 .titulo-opcao {
-    background-color: #0a7bf5;
+    background-color: #713600;
     color: #fcfcfc;
     font-family: 'Cabin', sans-serif;
     font-weight: 700;
@@ -324,7 +324,7 @@ main .container1 {
     width: fit-content;
     text-align: center;
     border-radius: 18px;
-    border: 3px solid #0a7bf5;
+    border: 3px solid #713600;
     margin: 25px auto;
 }
 .tituloacompanhamentos{
@@ -332,7 +332,7 @@ main .container1 {
     font-family: 'Cabin';
     font-weight: 100;
     font-size: 30px;
-    background-color: #0a7bf5;
+    background-color: #713600;
     width: 100%;
     margin-top: 2%;
     padding: 14px;
